@@ -1,0 +1,43 @@
+.myoption {
+  width : 25%;
+  
+}
+
+.centerBody{
+    background-image: url("bg01.png");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+}
+
+.titleImage{
+    width:100%;
+}
+
+.imageContainer{
+    position:relative;
+}
+.imageText{
+    position:absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mybtn{
+    background-image: url("plank.png");
+    background-color:brown;
+    background-size:100% 100%;
+}
+.questions{
+    font-weight: bold;
+}
+.partyChoose{
+    padding:30px;
+}
+
+body{
+    background-image: url("board.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
