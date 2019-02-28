@@ -1,14 +1,14 @@
 .jumbotron
 {
-    background-image: url("book.png");
+    background-image: url("Images/book.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: brown;
-    height: 75%;
+    height:100%;
     
 }
 body{
-    background-image: url("board.png");
+    background-image: url("Images/board.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }

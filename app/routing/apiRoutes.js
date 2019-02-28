@@ -13,13 +13,30 @@ module.exports = function(app)
 
       for(var i=0;i<partyData.length;i++)
       {
-        var partyCheck = {name:partyData[i].name, score:checkScores(userAnswers,partyData[i].scores)};
+        var partyCheck = {name:partyData[i].name, score:checkScores(userAnswers.user,partyData[i].scores)};
         topChoices.push(partyCheck);
       }
       
        topChoices.sort(function(a,b){return b.score - a.score});
+    var faveClass = grabChar(topChoices[6].name).class;
+    var party1 = grabChar(topChoices[0].name);
+    var party2 = grabChar(topChoices[1].name);
+
+    var surveyResponse = {playerClass:faveClass, firstparty:party1, secondparty:party2};
+    console.log(surveyResponse);
+       res.send(surveyResponse);
        
       });
+    function grabChar(x)
+    {
+      for(var i = 0;i<partyData.length;i++)
+      {
+        if(x === partyData[i].name)
+        {
+          return partyData[i];
+        }
+      }
+    }
 
     function checkScores(userArray,partyArray)
       {
