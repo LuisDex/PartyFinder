@@ -1,3 +1,4 @@
+//Creates the list of potential party members the user can be paired up with before exporting the array of characters
 var availableParty = [
     {
         name: "Osmulf",
